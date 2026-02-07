@@ -5,6 +5,7 @@ dist-ssr
 *.local
 count.txt
 .env
+.netlify
 .nitro
 .tanstack
 .wrangler
