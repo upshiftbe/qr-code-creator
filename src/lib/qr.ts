@@ -1,3 +1,5 @@
+'use client'
+
 /**
  * QR Code Generator — built from scratch (no external libraries).
  *

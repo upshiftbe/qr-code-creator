@@ -1,3 +1,5 @@
+'use client'
+
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useMemo, useCallback, useRef } from 'react'
 import {
@@ -15,7 +17,11 @@ import QrCodeSvg from '@/components/QrCodeSvg'
 
 export const Route = createFileRoute('/')({ component: App })
 
-const EC_OPTIONS: { value: ErrorCorrectionLevel; label: string; desc: string }[] = [
+const EC_OPTIONS: {
+  value: ErrorCorrectionLevel
+  label: string
+  desc: string
+}[] = [
   { value: 'L', label: 'Low (7%)', desc: 'Smallest QR code' },
   { value: 'M', label: 'Medium (15%)', desc: 'Balanced' },
   { value: 'Q', label: 'Quartile (25%)', desc: 'Good recovery' },
@@ -79,7 +85,7 @@ function App() {
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-950 via-slate-900 to-slate-950 text-gray-100">
       {/* Hero */}
-      <section className="px-6 pt-12 pb-8 text-center">
+      <section className="px-6 pt-24 pb-8 text-center">
         <div className="flex items-center justify-center gap-3 mb-3">
           <QrCode className="h-10 w-10 text-cyan-400" />
           <h1 className="text-4xl font-extrabold tracking-tight">
@@ -137,7 +143,9 @@ function App() {
                 >
                   <span className="font-medium">{opt.value}</span>
                   <span className="ml-1 text-xs opacity-70">— {opt.label}</span>
-                  <span className="block text-xs mt-0.5 opacity-50">{opt.desc}</span>
+                  <span className="block text-xs mt-0.5 opacity-50">
+                    {opt.desc}
+                  </span>
                 </button>
               ))}
             </div>
