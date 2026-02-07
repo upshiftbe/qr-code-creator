@@ -1,0 +1,17 @@
+{
+  "projectName": "qr-code-creator",
+  "mode": "file-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "pnpm",
+  "git": false,
+  "install": true,
+  "addOnOptions": {},
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "start",
+    "eslint",
+    "nitro"
+  ]
+}
