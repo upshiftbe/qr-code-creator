@@ -2,7 +2,7 @@ import { ExternalLink } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="border-t border-slate-800 bg-slate-900/80 backdrop-blur px-5 py-4 absolute bottom-0 left-0 right-0">
+    <footer className="border-t border-slate-800 bg-slate-900/80 backdrop-blur px-5 py-4 sticky bottom-0 left-0 right-0">
       <div className="max-w-6xl mx-auto flex items-center justify-center gap-1.5 text-sm text-gray-500">
         <span>Built by</span>
         <a
